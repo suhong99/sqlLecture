@@ -33,8 +33,10 @@ from employees;
 select *
 from departments;
 
-select employee_id,last_name , hire_date
-from employees;
+SELECT 
+    employee_id, last_name, hire_date
+FROM
+    employees;
 
 
 
@@ -46,5 +48,5 @@ from employees;
 select first_name, salary * 12 as "연봉"
 from employees;
 -- 문자열 합치기 "hello" + "world"  concat("hello","world")
-select concat('이름:', fist_name, ' 월급: ' ,salary)
+select concat('이름:', first_name, ' 월급: ' ,salary)
 from employees;
