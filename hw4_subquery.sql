@@ -1,7 +1,7 @@
 use mydb;
 
 -- 문제1) EMPLOYEES 테이블에서 Kochhar의 급여보다 많은 사원의 사원번호,이름,담당업무,급여를 출력하라.
-
+-- 복습
 SELECT employee_id, last_name, job_id, salary
 FROM employees
 WHERE salary > (SELECT salary FROM employees WHERE last_name = 'Kochhar');
