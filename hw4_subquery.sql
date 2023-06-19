@@ -37,6 +37,7 @@ where (job_id , salary) in (select job_id, min(salary)
                             
 
 select employee_id, last_name, job_id, department_id
+-- select *
 from employees
 where (job_id, salary) in (
     select job_id, MIN(salary)

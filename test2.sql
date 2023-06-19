@@ -3,3 +3,5 @@
 use mydb;
 
 select * from employees;
+
+select * from locations;
